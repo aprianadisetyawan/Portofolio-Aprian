@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprian Adi Setyawan - Portofolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation Library CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .bg-custom-dark { background-color: #131d4f; }
+        .bg-custom-cream { background-color: #efe4d2; }
+        .bg-custom-rust { background-color: #954c2e; }
+        .text-custom-dark { color: #131d4f; }
+        .text-custom-rust { color: #954c2e; }
+        .border-custom-rust { border-color: #954c2e; }
+        .border-custom-dark { border-color: #131d4f; }
+    </style>
+</head>
+<body class="bg-custom-cream text-custom-dark font-sans antialiased">
+
+    <!-- Header / Navbar dengan Transisi Warna Teks Dinamis & Menu Kontak -->
+    <header id="navbar" class="fixed top-0 w-full bg-slate-950/40 md:bg-transparent backdrop-blur border-b border-white/10 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span id="nav-title" class="font-bold text-lg text-white tracking-wide transition-colors duration-300">Aprian Adi Setyawan</span>
+            <nav class="space-x-5 text-sm font-medium hidden md:block">
+                <a href="#about" class="nav-link text-white hover:text-custom-rust transition-colors duration-300">Tentang</a>
+                <a href="#education" class="nav-link text-white hover:text-custom-rust transition-colors duration-300">Pendidikan</a>
+                <a href="#experience" class="nav-link text-white hover:text-custom-rust transition-colors duration-300">Pengalaman</a>
+                <a href="#projects" class="nav-link text-white hover:text-custom-rust transition-colors duration-300">Proyek</a>
+                <a href="#certifications" class="nav-link text-white hover:text-custom-rust transition-colors duration-300">Sertifikasi</a>
+                <a href="#skills" class="nav-link text-white hover:text-custom-rust transition-colors duration-300">Keahlian</a>
+                <a href="#contact" class="nav-link text-white hover:text-custom-rust transition-colors duration-300">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Halaman Cover / Hero Section -->
+    <section id="cover-section" class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-950 via-stone-950 to-custom-dark overflow-hidden pt-16">
+        <!-- Background Foto Remove-BG Diperbesar -->
+        <div class="absolute inset-0 z-0 opacity-40 flex items-center justify-center pointer-events-none">
+            <img src="IMG_5967.jpg" alt="Cover Background" class="w-full h-full object-cover object-center scale-110">
+        </div>
+        <!-- Efek Gradasi Gelap -->
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent z-0"></div>
+
+        <!-- Konten Cover -->
+        <div class="relative z-10 max-w-4xl w-full mx-auto px-6 text-center flex flex-col items-center justify-center space-y-6">
+            
+            <!-- Tulisan Besar PORTFOLIO di Background -->
+            <div class="relative py-4">
+                <h1 class="text-6xl md:text-9xl font-black tracking-widest text-white/10 select-none uppercase">
+                    PORTFOLIO
+                </h1>
+            </div>
+
+            <!-- Teks Nama & Gelar di Cover -->
+            <div class="space-y-3">
+                <span class="text-xs uppercase tracking-widest bg-custom-rust text-white px-4 py-1.5 rounded-full font-semibold shadow">
+                    Presented by
+                </span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-wide">
+                    Aprian Adi Setyawan, S.T.
+                </h2>
+                <p class="text-slate-300 font-medium text-base md:text-lg">
+                    Universitas Teknologi Yogyakarta
+                </p>
+            </div>
+
+            <!-- Kotak Kontak di Bagian Bawah Cover -->
+            
+            <!-- Tombol Pengarah Scroll ke Bawah -->
+            <div class="pt-6">
+                <a href="#about" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 text-white transition animate-bounce">
+                    ↓
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+        <div class="bg-white/60 border border-custom-dark/10 p-8 rounded-2xl shadow-sm grid md:grid-cols-3 gap-8 items-center">
+            <!-- Tempat Foto Profil -->
+            <div class="flex justify-center">
+                <img src="IMG_6245.JPEG" alt="Aprian Adi Setyawan" class="w-56 h-56 md:w-64 md:h-64 object-cover rounded-2xl border-2 border-custom-rust shadow-md hover:scale-105 transition duration-500">
+            </div>
+            <!-- Teks Deskripsi -->
+            <div class="md:col-span-2 space-y-4">
+                <span class="text-xs uppercase tracking-widest bg-custom-rust text-white px-3 py-1 rounded-full font-semibold">Tentang Saya</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-custom-dark">Profil Singkat</h2>
+                <p class="text-slate-700 leading-relaxed text-justify text-sm md:text-base">
+                    Perkenalkan saya Aprian Adi Setyawan seorang freshgraduate lulusan dari Universitas Teknologi Yogyakarta jurusan Teknik Komputer dengan gelar S.T. memperoleh IPK 3.74. Saya memiliki kemauan untuk selalu belajar dari kesalahan dan memperbaiki diri, disiplin waktu serta dapat bertanggung jawab terhadap tugas dan pekerjaan. Mampu bekerja secara individual maupun tim. Saya mahir dalam pembuatan project yang berkaitan dengan Internet of Things (IoT) baik hardware maupun software.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Background -->
+    <section id="education" class="py-12 px-6 max-w-5xl mx-auto border-t border-custom-dark/10" data-aos="fade-up">
+        <h2 class="text-2xl font-bold mb-8 text-custom-dark flex items-center gap-2">Pendidikan</h2>
+        <div class="space-y-6">
+            <div class="bg-white/60 border border-custom-dark/10 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                <span class="text-xs font-bold text-custom-rust">2022 - 2026</span>
+                <h3 class="text-xl font-bold text-custom-dark mt-1">Universitas Teknologi Yogyakarta</h3>
+                <p class="text-slate-600 text-sm mt-1">S1 Teknik Komputer | IPK: 3.74</p>
+            </div>
+            <div class="bg-white/60 border border-custom-dark/10 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                <span class="text-xs font-bold text-custom-rust">2019 - 2022</span>
+                <h3 class="text-xl font-bold text-custom-dark mt-1">SMAN 14 Pekanbaru</h3>
+                <p class="text-slate-600 text-sm mt-1">Jurusan IPA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-12 px-6 max-w-5xl mx-auto border-t border-custom-dark/10" data-aos="fade-up">
+        <h2 class="text-2xl font-bold mb-8 text-custom-dark">Pengalaman & Organisasi</h2>
+        <div class="space-y-6">
+            <!-- Exp 1 -->
+            <div class="bg-white/60 border border-custom-dark/10 p-6 rounded-xl shadow-sm grid md:grid-cols-3 gap-6 items-center">
+                <div class="md:col-span-2 space-y-3">
+                    <span class="text-xs font-bold text-custom-rust">2024</span>
+                    <h3 class="text-xl font-bold text-custom-dark">Panitia Kegiatan Sharing Teknologi Universitas Teknologi Yogyakarta</h3>
+                    <p class="text-slate-700 text-sm leading-relaxed text-justify">
+                        Saya sendiri berpartisipasi sebagai tim pembuatan teknologi yang dilengkapi dengan panel surya dan led untuk penerangan kolam ikan, dan sistem peringatan keamanan ketinggian air kolam berbasis SMS. Kegiatan ini sendiri bertujuan untuk membantu para petani dalam berkegiatan di malam hari yang membutuhkan penerangan, serta memberikan peringatan berupa pesan untuk pencegahan dini kondisi yang tidak diinginkan. Berlokasi di Selomartani, Kalasan, Kab. Sleman Yogyakarta.
+                    </p>
+                </div>
+                <div class="overflow-hidden rounded-lg border border-custom-dark/10 bg-white shadow-sm">
+                    <img src="APRIAN ADI SETYAWAN - Sharing Teknologi.jpg" alt="Sharing Teknologi UTY" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+            <!-- Exp 2 -->
+            <div class="bg-white/60 border border-custom-dark/10 p-6 rounded-xl shadow-sm grid md:grid-cols-3 gap-6 items-center">
+                <div class="md:col-span-2 space-y-3">
+                    <span class="text-xs font-bold text-custom-rust">2024 - 2025</span>
+                    <h3 class="text-xl font-bold text-custom-dark">Humas Himpunan Mahasiswa Teknik Komputer</h3>
+                    <p class="text-slate-700 text-sm leading-relaxed text-justify">
+                        Saya mengikuti organisasi kemahasiswaan selama masa perkuliahan, disini saya belajar banyak hal termasuk kedisiplinan, cara berkomunikasi dengan baik, dan juga kerjasama tim.
+                    </p>
+                </div>
+                <div class="overflow-hidden rounded-lg border border-custom-dark/10 bg-white shadow-sm">
+                    <img src="APRIAN ADI SETYAWAN - HUMAS.jpg" alt="Humas Himalkom" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+            <!-- Exp 3 -->
+            <div class="bg-white/60 border border-custom-dark/10 p-6 rounded-xl shadow-sm grid md:grid-cols-3 gap-6 items-center">
+                <div class="md:col-span-2 space-y-3">
+                    <span class="text-xs font-bold text-custom-rust">2024</span>
+                    <h3 class="text-xl font-bold text-custom-dark">Panitia Workshop Collaboration Membangun Personal Branding dengan Linked-In dan CV</h3>
+                    <p class="text-slate-700 text-sm leading-relaxed text-justify">
+                        Saya juga sempat menjadi panitia dalam Workshop Collaboration antara Universitas Teknologi Yogyakarta dan Momentum Aksi Kreativa.
+                    </p>
+                </div>
+                <div class="overflow-hidden rounded-lg border border-custom-dark/10 bg-white shadow-sm">
+                    <img src="APRIAN ADI SETYAWAN - PELATIHAN MAK_page-0001.jpg" alt="Workshop Collaboration" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-12 px-6 max-w-5xl mx-auto border-t border-custom-dark/10" data-aos="fade-up">
+        <h2 class="text-2xl font-bold mb-8 text-custom-dark">Proyek Portofolio</h2>
+        
+        <!-- PROYEK UTAMA: LoRa Monitoring (6 Gambar) -->
+        <div class="bg-white/60 border border-custom-dark/10 p-8 rounded-2xl shadow-sm mb-8 space-y-6 hover:shadow-md transition">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div>
+                    <span class="text-xs font-bold text-custom-rust uppercase tracking-wider">Main Project</span>
+                    <h3 class="text-2xl font-bold text-custom-dark mt-1">Multi-Point Soil Monitoring With LoRa Data Transmission</h3>
+                </div>
+                <div class="flex flex-wrap gap-2 text-xs">
+                    <span class="bg-custom-cream border border-custom-dark/20 px-3 py-1 rounded font-medium">ESP32</span>
+                    <span class="bg-custom-cream border border-custom-dark/20 px-3 py-1 rounded font-medium">LoRa RA-02</span>
+                    <span class="bg-custom-cream border border-custom-dark/20 px-3 py-1 rounded font-medium">InfluxDB</span>
+                    <span class="bg-custom-cream border border-custom-dark/20 px-3 py-1 rounded font-medium">Grafana</span>
+                    <span class="bg-custom-cream border border-custom-dark/20 px-3 py-1 rounded font-medium">Dual-SPI SD Card</span>
+                </div>
+            </div>
+
+            <!-- Galeri 6 Gambar LoRa -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="overflow-hidden rounded-xl border border-custom-dark/10 bg-white">
+                    <img src="IMG_5779.jpg" alt="Node Transmitter" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                    <div class="p-2 text-center text-xs font-medium text-slate-600">Node Transmitter</div>
+                </div>
+                <div class="overflow-hidden rounded-xl border border-custom-dark/10 bg-white">
+                    <img src="IMG_5825.jpeg" alt="Node Receiver" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                    <div class="p-2 text-center text-xs font-medium text-slate-600">Node Receiver</div>
+                </div>
+                <div class="overflow-hidden rounded-xl border border-custom-dark/10 bg-white">
+                    <img src="IMG_5804.jpeg" alt="Implementasi Lapangan" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                    <div class="p-2 text-center text-xs font-medium text-slate-600">Implementasi Lapangan</div>
+                </div>
+                <div class="overflow-hidden rounded-xl border border-custom-dark/10 bg-white">
+                    <img src="SKEMAATIK TRANS.png" alt="Skematik Rangkaian" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                    <div class="p-2 text-center text-xs font-medium text-slate-600">Skematik Rangkaian</div>
+                </div>
+                <div class="overflow-hidden rounded-xl border border-custom-dark/10 bg-white">
+                    <img src="grafana.png" alt="Visualisasi Grafana" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                    <div class="p-2 text-center text-xs font-medium text-slate-600">Visualisasi Grafana</div>
+                </div>
+                <div class="overflow-hidden rounded-xl border border-custom-dark/10 bg-white">
+                    <img src="kritis.png" alt="Notifikasi Telegram" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                    <div class="p-2 text-center text-xs font-medium text-slate-600">Notifikasi Telegram</div>
+                </div>
+            </div>
+
+            <p class="text-slate-700 text-sm md:text-base leading-relaxed text-justify">
+                Sistem Monitoring Kualitas Tanah pada Tanaman dengan Komunikasi Data LoRa dan Catu Daya Panel Surya. Dirancang untuk monitoring data kualitas tanah yang mencakup kelembapan dan suhu tanah serta udara yang mendukung pengiriman data jarak jauh nirkabel menggunakan frekuensi radio LoRa dari node transmitter lapangan ke node receiver gateway pusat, dilengkapi isolasi bus dual-SPI demi kestabilan pencatatan data saat koneksi terputus menggunakan microSD serta pipeline analitik data menggunakan InfluxDB, Visualisasi Data Grafana, dan notifikasi alert Telegram.
+            </p>
+        </div>
+
+        <!-- Sisa Proyek Lainnya -->
+        <div class="space-y-6">
+            <!-- Project 1: Sortir Cabai (2 Gambar) -->
+            <div class="bg-white/60 border border-custom-dark/10 p-6 rounded-xl shadow-sm space-y-4 hover:shadow-md transition">
+                <div>
+                    <span class="text-xs font-bold text-custom-rust uppercase">Industrial Automation & IoT</span>
+                    <h3 class="text-xl font-bold text-custom-dark mt-1 mb-3">IoT Chilli Ripeness Sorting System</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="overflow-hidden rounded-lg border border-custom-dark/10 bg-white">
+                        <img src="WhatsApp Image 2026-11-03 at 17.09.52.jpeg" alt="IoT Chilli Sorting 1" class="w-full h-56 object-cover hover:scale-105 transition duration-500">
+                        <div class="p-2 text-center text-xs font-medium text-slate-600">Sistem Mekanikal & Sensor TCS3200</div>
+                    </div>
+                    <div class="overflow-hidden rounded-lg border border-custom-dark/10 bg-white">
+                        <img src="Screenshot 2026-11-03 171137.png" alt="IoT Chilli Sorting 2" class="w-full h-56 object-cover hover:scale-105 transition duration-500">
+                        <div class="p-2 text-center text-xs font-medium text-slate-600">Dashboard Node-RED</div>
+                    </div>
+                </div>
+                <p class="text-slate-700 text-sm text-justify">Sistem sortir cabai otomatis berbasis sensor warna TCS3200 dan Wemos D1 R32 yang terhubung ke dashboard Node-RED.</p>
+                <div class="flex flex-wrap gap-2 text-xs text-custom-dark pt-2">
+                    <span class="bg-custom-cream border border-custom-dark/20 px-2 py-1 rounded font-medium">ESP32/Wemos</span>
+                    <span class="bg-custom-cream border border-custom-dark/20 px-2 py-1 rounded font-medium">MQTT</span>
+                    <span class="bg-custom-cream border border-custom-dark/20 px-2 py-1 rounded font-medium">Node-RED</span>
+                </div>
+            </div>
+
+            <!-- Project 2: Setyawan Dental Care App (4 Gambar) -->
+            <div class="bg-white/60 border border-custom-dark/10 p-6 rounded-xl shadow-sm space-y-4 hover:shadow-md transition">
+                <div>
+                    <span class="text-xs font-bold text-custom-rust uppercase">Mobile App Development</span>
+                    <h3 class="text-xl font-bold text-custom-dark mt-1 mb-3">Setyawan Dental Care App</h3>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="overflow-hidden rounded-lg border border-custom-dark/10 bg-white">
+                        <img src="2.png" alt="Dental App 1" class="w-full h-56 object-cover hover:scale-105 transition duration-500">
+                        <div class="p-2 text-center text-xs font-medium text-slate-600">Halaman Login</div>
+                    </div>
+                    <div class="overflow-hidden rounded-lg border border-custom-dark/10 bg-white">
+                        <img src="7.png" alt="Dental App 2" class="w-full h-56 object-cover hover:scale-105 transition duration-500">
+                        <div class="p-2 text-center text-xs font-medium text-slate-600">Menu Utama</div>
+                    </div>
+                    <div class="overflow-hidden rounded-lg border border-custom-dark/10 bg-white">
+                        <img src="13.png" alt="Dental App 3" class="w-full h-56 object-cover hover:scale-105 transition duration-500">
+                        <div class="p-2 text-center text-xs font-medium text-slate-600">Reservasi Pasien</div>
+                    </div>
+                    <div class="overflow-hidden rounded-lg border border-custom-dark/10 bg-white">
+                        <img src="15.png" alt="Dental App 4" class="w-full h-56 object-cover hover:scale-105 transition duration-500">
+                        <div class="p-2 text-center text-xs font-medium text-slate-600">Menu Keseluruhan</div>
+                    </div>
+                </div>
+                <p class="text-slate-700 text-sm text-justify">Aplikasi Android untuk manajemen reservasi pasien dan rekam data layanan klinik gigi berbasis Firebase.</p>
+                <div class="flex flex-wrap gap-2 text-xs text-custom-dark pt-2">
+                    <span class="bg-custom-cream border border-custom-dark/20 px-2 py-1 rounded font-medium">Android Studio</span>
+                    <span class="bg-custom-cream border border-custom-dark/20 px-2 py-1 rounded font-medium">Java</span>
+                    <span class="bg-custom-cream border border-custom-dark/20 px-2 py-1 rounded font-medium">Firebase</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-12 px-6 max-w-5xl mx-auto border-t border-custom-dark/10" data-aos="fade-up">
+        <h2 class="text-2xl font-bold mb-8 text-custom-dark">Sertifikasi & Kualifikasi</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Cert 1 -->
+            <div class="bg-white/60 border border-custom-dark/10 p-6 rounded-xl shadow-sm flex flex-col justify-between space-y-4 hover:shadow-md transition">
+                <div>
+                    <span class="text-xs font-bold text-custom-rust">Maret 2026 - Maret 2027</span>
+                    <h3 class="text-lg font-bold text-custom-dark mt-1 mb-3">Test of English as a Foreign Language (TOEFL)</h3>
+                    <div class="overflow-hidden rounded-lg border border-custom-dark/10 mb-3 bg-white flex justify-center p-2">
+                        <img src="TOEFL_5221011068_16_03_2026_14_53_32_page-0001.jpg" alt="TOEFL Certificate" class="w-full h-48 object-contain hover:scale-105 transition duration-500">
+                    </div>
+                    <p class="text-slate-600 text-sm">Score: 510</p>
+                </div>
+                <div class="text-xs font-medium text-slate-500 bg-custom-cream/50 p-2 rounded border border-custom-dark/10">
+                    UTY Education, Certification, and Training Center
+                </div>
+            </div>
+            <!-- Cert 2 -->
+            <div class="bg-white/60 border border-custom-dark/10 p-6 rounded-xl shadow-sm flex flex-col justify-between space-y-4 hover:shadow-md transition">
+                <div>
+                    <span class="text-xs font-bold text-custom-rust">Juni 2025 - Juni 2027</span>
+                    <h3 class="text-lg font-bold text-custom-dark mt-1 mb-3">Machine Learning Professional Certification</h3>
+                    <div class="overflow-hidden rounded-lg border border-custom-dark/10 mb-3 bg-white flex justify-center p-2">
+                        <img src="APRIAN ADI SETYAWAN - MACHINE LEARNING_page-0001.jpg" alt="Machine Learning Certification" class="w-full h-48 object-contain hover:scale-105 transition duration-500">
+                    </div>
+                </div>
+                <div class="text-xs font-medium text-slate-500 bg-custom-cream/50 p-2 rounded border border-custom-dark/10">
+                    Altair RapidMiner
+                </div>
+            </div>
+            <!-- Cert 3 -->
+            <div class="bg-white/60 border border-custom-dark/10 p-6 rounded-xl shadow-sm flex flex-col justify-between space-y-4 hover:shadow-md transition">
+                <div>
+                    <span class="text-xs font-bold text-custom-rust">Januari 2025 - Januari 2027</span>
+                    <h3 class="text-lg font-bold text-custom-dark mt-1 mb-3">Data Engineering Professional Certification</h3>
+                    <div class="overflow-hidden rounded-lg border border-custom-dark/10 mb-3 bg-white flex justify-center p-2">
+                        <img src="APRIAN ADI SETYAWAN - DATA ENGINEERING_page-0001.jpg" alt="Data Engineering Certification" class="w-full h-48 object-contain hover:scale-105 transition duration-500">
+                    </div>
+                </div>
+                <div class="text-xs font-medium text-slate-500 bg-custom-cream/50 p-2 rounded border border-custom-dark/10">
+                    Altair RapidMiner
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-12 px-6 max-w-5xl mx-auto border-t border-custom-dark/10" data-aos="fade-up">
+        <h2 class="text-2xl font-bold mb-8 text-custom-dark">Keahlian & Bahasa</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Bahasa -->
+            <div class="bg-white/60 border border-custom-dark/10 p-6 rounded-xl shadow-sm">
+                <h3 class="font-bold text-custom-dark mb-3">Bahasa</h3>
+                <ul class="space-y-2 text-sm text-slate-700">
+                    <li>• Bahasa Indonesia (Native)</li>
+                    <li>• Bahasa Inggris (Professional Working)</li>
+                </ul>
+            </div>
+            <!-- Software & Tools -->
+            <div class="bg-white/60 border border-custom-dark/10 p-6 rounded-xl shadow-sm">
+                <h3 class="font-bold text-custom-dark mb-3">Software & Tools</h3>
+                <div class="flex flex-wrap gap-2 text-xs">
+                    <span class="bg-custom-dark/10 text-custom-dark px-2.5 py-1 rounded font-medium">Android Studio</span>
+                    <span class="bg-custom-dark/10 text-custom-dark px-2.5 py-1 rounded font-medium">RapidMiner</span>
+                    <span class="bg-custom-dark/10 text-custom-dark px-2.5 py-1 rounded font-medium">Arduino IDE</span>
+                    <span class="bg-custom-dark/10 text-custom-dark px-2.5 py-1 rounded font-medium">Firebase</span>
+                    <span class="bg-custom-dark/10 text-custom-dark px-2.5 py-1 rounded font-medium">InfluxDB</span>
+                    <span class="bg-custom-dark/10 text-custom-dark px-2.5 py-1 rounded font-medium">Grafana</span>
+                    <span class="bg-custom-dark/10 text-custom-dark px-2.5 py-1 rounded font-medium">VS Code</span>
+                    <span class="bg-custom-dark/10 text-custom-dark px-2.5 py-1 rounded font-medium">Node-RED</span>
+                </div>
+            </div>
+            <!-- Pemrograman -->
+            <div class="bg-white/60 border border-custom-dark/10 p-6 rounded-xl shadow-sm">
+                <h3 class="font-bold text-custom-dark mb-3">Bahasa Pemrograman</h3>
+                <div class="flex flex-wrap gap-2 text-xs">
+                    <span class="bg-custom-rust/10 text-custom-rust px-2.5 py-1 rounded font-medium">C++</span>
+                    <span class="bg-custom-rust/10 text-custom-rust px-2.5 py-1 rounded font-medium">Python</span>
+                    <span class="bg-custom-rust/10 text-custom-rust px-2.5 py-1 rounded font-medium">PHP</span>
+                    <span class="bg-custom-rust/10 text-custom-rust px-2.5 py-1 rounded font-medium">Java</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section (Logo Berupa Gambar) -->
+    <section id="contact" class="py-16 px-6 max-w-5xl mx-auto border-t border-custom-dark/10" data-aos="fade-up">
+        <h2 class="text-2xl font-bold mb-8 text-custom-dark text-center">Contact Me</h2>
+        <div class="bg-white/60 border border-custom-dark/10 p-8 rounded-2xl shadow-sm max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+            
+            <!-- Email -->
+            <div class="flex items-center space-x-3 bg-custom-cream/40 p-4 rounded-xl border border-custom-dark/10 hover:shadow-sm transition">
+                <!-- Ganti logo-email.png dengan nama file logo email kamu -->
+                <img src="gmail.png" alt="Email Logo" class="w-7 h-7 object-contain shrink-0">
+                <div>
+                    <p class="font-bold text-custom-dark">Email</p>
+                    <a href="mailto:apriansetiawan966@gmail.com" class="text-slate-600 hover:text-custom-rust transition break-all">apriansetiawan966@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- Telepon / WhatsApp -->
+            <div class="flex items-center space-x-3 bg-custom-cream/40 p-4 rounded-xl border border-custom-dark/10 hover:shadow-sm transition">
+                <!-- Ganti logo-whatsapp.png dengan nama file logo wa/telepon kamu -->
+                <img src="whatsapp.png" alt="WhatsApp Logo" class="w-7 h-7 object-contain shrink-0">
+                <div>
+                    <p class="font-bold text-custom-dark">Telepon / WhatsApp</p>
+                    <a href="https://wa.me/6287844197201" target="_blank" class="text-slate-600 hover:text-custom-rust transition">+62 878-4419-7201</a>
+                </div>
+            </div>
+
+            <!-- Instagram -->
+            <div class="flex items-center space-x-3 bg-custom-cream/40 p-4 rounded-xl border border-custom-dark/10 hover:shadow-sm transition">
+                <!-- Ganti logo-instagram.png dengan nama file logo instagram kamu -->
+                <img src="instagram (1).png" alt="Instagram Logo" class="w-7 h-7 object-contain shrink-0">
+                <div>
+                    <p class="font-bold text-custom-dark">Instagram</p>
+                    <a href="https://instagram.com/aprianadisetyawan" target="_blank" class="text-slate-600 hover:text-custom-rust transition">@aprianadisetyawan</a>
+                </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="flex items-center space-x-3 bg-custom-cream/40 p-4 rounded-xl border border-custom-dark/10 hover:shadow-sm transition">
+                <!-- Ganti logo-linkedin.png dengan nama file logo linkedin kamu -->
+                <img src="linkedin (1).png" alt="LinkedIn Logo" class="w-7 h-7 object-contain shrink-0">
+                <div>
+                    <p class="font-bold text-custom-dark">LinkedIn</p>
+                    <a href="https://linkedin.com/in/aprian-adi-setyawan" target="_blank" class="text-slate-600 hover:text-custom-rust transition">Aprian Adi Setyawan</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-custom-dark/10 py-8 text-center text-sm text-slate-600 bg-white/40">
+        <p>&copy; 2026 Aprian Adi Setyawan butuh loker</p>
+    </footer>
+
+    <!-- AOS Script Initialization & Dynamic Navbar Color Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+
+        // Script untuk mengubah warna teks navbar saat scroll keluar dari cover section
+        const navbar = document.getElementById('navbar');
+        const navTitle = document.getElementById('nav-title');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const coverSection = document.getElementById('cover-section');
+
+        window.addEventListener('scroll', () => {
+            const coverHeight = coverSection.offsetHeight;
+            if (window.scrollY >= coverHeight - 80) {
+                // Saat scroll ke bagian bawah cover (latar belakang terang)
+                navbar.classList.remove('bg-slate-950/40', 'border-white/10');
+                navbar.classList.add('bg-custom-cream/90', 'border-custom-dark/10', 'shadow-sm');
+                navTitle.classList.remove('text-white');
+                navTitle.classList.add('text-custom-dark');
+                navLinks.forEach(link => {
+                    link.classList.remove('text-white');
+                    link.classList.add('text-custom-dark');
+                });
+            } else {
+                // Saat berada di halaman cover (latar belakang gelap)
+                navbar.classList.add('bg-slate-950/40', 'border-white/10');
+                navbar.classList.remove('bg-custom-cream/90', 'border-custom-dark/10', 'shadow-sm');
+                navTitle.classList.add('text-white');
+                navTitle.classList.remove('text-custom-dark');
+                navLinks.forEach(link => {
+                    link.classList.add('text-white');
+                    link.classList.remove('text-custom-dark');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
